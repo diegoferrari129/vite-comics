@@ -7,21 +7,21 @@ export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
   }
 }
 </script>
+
 <template>
   <div>
     <AppHeader />
-  </div>
-  <div>
+
     <AppMain />
-  </div>
-  <div>
+
     <AppFooter />
   </div>
 </template>
+
 <style lang="scss">
   @use './style/general.scss';
 </style>
