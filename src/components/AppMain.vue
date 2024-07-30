@@ -5,15 +5,21 @@ export default {
 </script>
 
 <template>
-    <div>
+    <main class="main">
         <div class="container">
             <div class="row">
-                <div class="col-12"></div>
+                <div class="col-12">
+                    <div class="main__content">
+                        content
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </template>
 
-<style lang="">
-    
+<style lang="scss" scoped>
+    .main {
+        background-color: black;
+    }
 </style>
