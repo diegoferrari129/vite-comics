@@ -1,5 +1,61 @@
 <script>
 export default {
+    data() {
+        return {
+            links: [
+                {
+                    label: 'CHARACTERS',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'COMICS',
+                    url: '#',
+                    current: true,
+                },
+                {
+                    label: 'MOVIES',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'TV',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'GAMES',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'COLLECTIBLES',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'VIDEOS',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'FANS',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'NEWS',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    label: 'SHOP',
+                    url: '#',
+                    current: false,
+                },
+            ]
+        }
+    },
     
 }
 </script>
@@ -18,35 +74,8 @@ export default {
                         <!-- menu -->
                         <div>
                             <ul class="list-unstyled d-flex">
-                                <li>
-                                    <a href="#">CHARACTERS</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="active">COMICS</a>
-                                </li>
-                                <li>
-                                    <a href="#">MOVIES</a>
-                                </li>
-                                <li>
-                                    <a href="#">TV</a>
-                                </li>
-                                <li>
-                                    <a href="#">GAMES</a>
-                                </li>
-                                <li>
-                                    <a href="#">COLLECTIBLES</a>
-                                </li>
-                                <li>
-                                    <a href="#">VIDEOS</a>
-                                </li>
-                                <li>
-                                    <a href="#">FANS</a>
-                                </li>
-                                <li>
-                                    <a href="#">NEWS</a>
-                                </li>
-                                <li>
-                                    <a href="#">SHOP</a>
+                                <li v-for="link, index in links" :key="index">
+                                    <a :href="link.url" :class="link.current ? 'active' : ''">{{ link.label }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,7 +93,7 @@ export default {
             font-weight: 600;
             
             &:hover {
-                font-size: 20px;
+                font-weight: 800;
             }
 
             a {
@@ -74,7 +103,9 @@ export default {
         }
 
         .active {
-            color: blue;
+            color: #0282f9;
+            padding-bottom: 30px;
+            border-bottom: 5px solid #0282f9;
         }
     }
 </style>
