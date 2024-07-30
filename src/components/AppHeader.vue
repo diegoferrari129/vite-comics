@@ -56,7 +56,6 @@ export default {
             ]
         }
     },
-    
 }
 </script>
 
@@ -93,6 +92,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables' as *;
+
     .header {
         background-color: white;
         padding: 25px 0px;
@@ -100,13 +101,9 @@ export default {
         .header__content {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         
-
             .header__menu {
-                display: flex;
-                align-items: center;
-                
-                
                 ul {
                     li{
                         padding: 0px 15px;
@@ -123,7 +120,7 @@ export default {
                     }
                     
                     .active {
-                        color: #0282f9;
+                        color: $active__color;
                         padding-bottom: 67px;
                         border-bottom: 7px solid #0282f9;
                     }
