@@ -58,5 +58,23 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+    ul {
+        li{
+            padding: 0px 15px;
+            font-weight: 600;
+            
+            &:hover {
+                font-size: 20px;
+            }
 
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .active {
+            color: blue;
+        }
+    }
 </style>
