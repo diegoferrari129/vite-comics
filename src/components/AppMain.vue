@@ -1,7 +1,16 @@
 <script>
-
+import contentMain from '../data/dc-comics.json';
+import comics from './comics.vue';
 export default {
-    
+
+    components: {
+        comics
+    },
+    data() {
+        return {
+            contentMain: contentMain
+        }
+    },
 }
 </script>
 
@@ -12,12 +21,7 @@ export default {
     <main class="main">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="main__content">
-                        <img src="" alt="">
-                        <h6>content</h6>
-                    </div>
-                </div>
+                <comics v-for="content in contentMain" key="c-`${content.id}`" :contentImg="content.thumb" :contentTitle="content.series"/>
             </div>
         </div>
     </main>

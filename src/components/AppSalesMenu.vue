@@ -11,22 +11,27 @@ export default {
                 {   
                     label: 'DIGITAL COMICS',
                     img: digitalComicsImg,
+                    url: '#',
                 },
                 {   
                     label: 'DC MERCHANDISE',
                     img: merchandiseImg,
+                    url: '#',
                 },
                 {   
                     label: 'SUBSCRIPTION',
                     img: subscriptionImg,
+                    url: '#',
                 },
                 {   
                     label: 'COMIC SHOP LOCATOR',
                     img: shopLocatorImg,
+                    url: '#',
                 },
                 {   
                     label: 'DC POWER VISA',
                     img: dcPowerVisaImg,
+                    url: '#',
                 },
             ]
         }
@@ -87,6 +92,12 @@ export default {
                     img {
                         object-fit: contain;
                     }
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
