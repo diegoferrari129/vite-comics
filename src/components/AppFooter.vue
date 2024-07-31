@@ -207,6 +207,7 @@ export default {
                 color: #0282f9;
                 font-weight: 700;
                 margin-right: 10px;
+                margin-top: 15px;
             }
 
             img {
