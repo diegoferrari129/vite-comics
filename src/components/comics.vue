@@ -23,11 +23,14 @@ export default {
 .main__content {
     padding-top: 40px;
     display: flex;
-    width: 200px;
+    width: 170px;
     height: 200px;
 
     img {
-        object-fit: fill;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
     }
 }
 
