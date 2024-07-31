@@ -36,10 +36,8 @@ export default {
 
     .main {
         background-color: black;
-
-        .main__content {
-            color: white;
-        }
+        color: white;
+        padding-bottom: 40px;
     }
 
 </style>
