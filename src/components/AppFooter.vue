@@ -117,14 +117,30 @@ export default {
                     </div>
                 </div>
             </div>
-            <!-- bottom footer -->
+        </div>
+        <div class="bottom__footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12"></div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="button__footer">
+                                <button>SIGN-UP NOW!</button>
+                            </div>
+                            <div class="social">
+                                <h5>FOLLOW US</h5>
+                                <img src="../assets/img/footer-facebook.png" alt="">
+                                <img src="../assets/img/footer-twitter.png" alt="">
+                                <img src="../assets/img/footer-youtube.png" alt="">
+                                <img src="../assets/img/footer-pinterest.png" alt="">
+                                <img src="../assets/img/footer-periscope.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    
 </template>
 
 
@@ -153,15 +169,48 @@ export default {
                 margin: 0;
                 
                 li{
+                    font-size: 14px;
                     padding: 0;
                     margin: 0;
-                    font-size: 14px;
                     
                     a{
                         text-decoration: none;
                         color: #959595;
                     }
                 }
+            }
+        }
+    }
+
+    .bottom__footer {
+        background-color: #303030;
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+
+        .button__footer {
+            
+            button {
+                background-color: #303030;
+                color: white;
+                font-weight: 600;
+                padding: 10px;
+                border: 2px solid #0282f9;
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            h5 {
+                color: #0282f9;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+
+            img {
+                margin: 0px 7px;
             }
         }
     }

@@ -60,7 +60,7 @@ export default {
 
     .sales {
         background-color: $active__color;
-        min-height: 150px;
+        min-height: 140px;
     }
 
     .sales__menu {
@@ -70,7 +70,7 @@ export default {
             display: flex;
             justify-content: center;
             justify-content: space-around;
-            margin-top: 50px;
+            margin-top: 45px;
             
             li {
                 padding: 0px 30px;
