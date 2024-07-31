@@ -44,8 +44,8 @@ export default {
                             <li v-for="buy, index in salesMenu" :key="index"> 
                                 <div class="prod">
                                     <img :src="buy.img" :alt="buy.label"> 
-                                    <a :href="buy.url">{{buy.label}}</a>
                                 </div>
+                                <a :href="buy.url">{{buy.label}}</a>
                             </li>
                         </ul>
                     </div>
@@ -69,16 +69,24 @@ export default {
             list-style-type: none;
             display: flex;
             justify-content: center;
+            justify-content: space-around;
             margin-top: 50px;
-            
             
             li {
                 padding: 0px 30px;
                 color: white;
+                display: flex;
+                align-items: center;
 
-                img {
-                    padding-right: 10px;
-                    max-width: 50px;
+                .prod {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    margin-right: 5px;
+                    
+                    img {
+                        object-fit: contain;
+                    }
                 }
             }
         }
